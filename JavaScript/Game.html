@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Who wants to be a MILLIONAIRE</title>
+    <link rel="stylesheet" type="text/css" href="gameDesign.css" />
+</head>
+<body>
+    <div class="flex-container">
+        <div class="middle-content">
+            <div class="buttons">
+                <!-- Fandom, 2023. 50:50. [online] Available at: https://millionaire.fandom.com/wiki/50:50 [Accessed 23rd October 2023]. -->
+                <button id = "fiftyFifty" class="imageButton" onclick = "fiftyFiftyChance()"><img src="images/50x50.png" alt="Icon 1" /></button>
+                <!-- Pinterest, 2023. Ask the Audience. [online] Available at: https://www.pinterest.com/pin/ask-the-audience--589619776209103884/ [Accessed 23rd October 2023]. -->
+                <button id = "askAudience"class="imageButton" onclick = "askForHelpAudience()"><img src="images/askAudience.png" alt="Icon 2" /></button>
+                <!-- Andreas Elley, 2023. Phone Call. [online] Available at: https://illustrated-musings.andreaselley.com/p/i-used-my-phone-a-friend [Accessed 23rd October 2023]. -->
+                <button id = "askFriend"  class="imageButton" onclick = "askForHelpFriend()"><img src="images/phoneCall.png" alt="Icon 3" /></button>
+            </div>
+            <div class="content-container">
+                <!-- Money Doctors, 2023. Logo. [online] Available at: https://moneydoctors.ie/become-a-millionaire-nice-slow-article-by-john-lowe-of-moneydoctors-ie-on-www-rte-ie-lifestyle-18-6-24/ [Accessed 23rd October 2023]. -->
+                <button class="imageButton centerButton"><img src="images/whoWantsToBe.png" alt="Center Icon" /></button>
+                <div class="player-name" id="playerName"></div>
+            </div>
+
+            <div class="question-container">
+                <label></label>
+
+                <div class="answer-row">
+                    A:<button class="answer-button">Answer 1</button>
+                    B:<button class="answer-button">Answer 2</button>
+                </div>
+                <div class="answer-row">
+                    C:<button class="answer-button">Answer 3</button>
+                    D:<button class="answer-button">Answer 4</button>
+                </div>
+            </div>
+        </div>
+
+        <table id="moneyTable" class="money-table">
+            <tr class="savePoint">
+                <td>15</td>
+                
+                <td>£1 Million</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                
+                <td>£500,000</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                
+                <td>£250,000</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                
+                <td>£125,000</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                
+                <td>£64,000</td>
+            </tr>
+            <tr class="savePoint">
+                <td>10</td>
+                
+                <td>£32,000</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                
+                <td>£16,000</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                
+                <td>£8,000</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                
+                <td>£4,000</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                
+                <td>£2,000</td>
+            </tr>
+            <tr class="savePoint">
+                <td>5</td>
+                
+                <td>£1,000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                
+                <td>£500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                
+                <td>£300</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                
+                <td>£200</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                
+                <td>£100</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src = "gameDev.js"></script>
+
+</body>
+</html>
